@@ -339,7 +339,7 @@ h2 {
 /* ===== PÁGINA DE EVENTOS ===== */
 .hero-eventos {
     background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-                      url('../img/eventos/hero-eventos.svg');
+                      url('../img/eventos/hero-eventos.jpg');
 }
 
 .eventos-intro {
