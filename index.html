@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mixtos Anamorós - Venta de comida y platillos especiales en Anamorós, La Unión. Menú del día y eventos de gran magnitud.">
+    <title>Mixtos Anamorós | Comida y Eventos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo Mixtos Anamorós" width="60" height="60">
+                <span>Mixtos Anamorós</span>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content container">
+            <h1>Comida casera y platillos especiales en Anamorós</h1>
+            <p>Menú del día preparado al instante para que tu comida llegue caliente a tu mesa.</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn btn-primary">Ver Menú</a>
+                <a href="https://wa.me/50360569876" class="btn btn-whatsapp" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BIENVENIDA -->
+    <section class="bienvenida container">
+        <h2>Bienvenidos a Mixtos Anamorós</h2>
+        <p>Somos un emprendimiento familiar con 3 años de experiencia ofreciendo comida de calidad en el Barrio Nuevo, Anamorós. También atendemos eventos de gran magnitud a nivel nacional.</p>
+    </section>
+
+    <!-- PLATILLOS DESTACADOS -->
+    <section class="destacados container">
+        <h2>Platillos Destacados</h2>
+        <div class="cards-grid">
+            <article class="card">
+                <img src="img/platillos/plato1.jpg" alt="Platillo 1" loading="lazy" width="300" height="200">
+                <h3>Platillo Típico</h3>
+                <p>Delicioso platillo con ingredientes frescos del día.</p>
+                <span class="precio">$5.00</span>
+            </article>
+            <article class="card">
+                <img src="img/platillos/plato2.jpg" alt="Platillo 2" loading="lazy" width="300" height="200">
+                <h3>Especial de la Casa</h3>
+                <p>Nuestra receta estrella preparada al instante.</p>
+                <span class="precio">$6.50</span>
+            </article>
+            <article class="card">
+                <img src="img/platillos/plato3.jpg" alt="Platillo 3" loading="lazy" width="300" height="200">
+                <h3>Combo Familiar</h3>
+                <p>Ideal para compartir en familia o con amigos.</p>
+                <span class="precio">$12.00</span>
+            </article>
+        </div>
+    </section>
+
+    <!-- CTA EVENTOS -->
+    <section class="cta-eventos">
+        <div class="container">
+            <h2>¿Tienes un evento?</h2>
+            <p>Atendemos eventos de gran magnitud a nivel nacional. Cotiza con nosotros.</p>
+            <a href="eventos.html" class="btn btn-primary">Ver más</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Mixtos Anamorós</h3>
+                <p>Comida y platillos especiales en Anamorós, La Unión.</p>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <p>📞 6056-9876</p>
+                <p>✉️ mixtosanamoros503@gmail.com</p>
+                <p>🕒 10:30 AM - 9:00 PM</p>
+            </div>
+            <div>
+                <h3>Ubicación</h3>
+                <p>Barrio Nuevo, Anamorós, La Unión Norte</p>
+                <a href="https://share.google/uU0UTtlA4N5zg69qw" target="_blank" rel="noopener">Ver en Google Maps</a>
+            </div>
+            <div>
+                <h3>Síguenos</h3>
+                <a href="https://wa.me/50360569876" target="_blank" rel="noopener">WhatsApp</a><br>
+                <a href="#" target="_blank" rel="noopener">Facebook</a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 Mixtos Anamorós. Proyecto académico UNIVO - Diseño Web Adaptable.</p>
+    </footer>
+
+    <script>
+        // Menú hamburguesa
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
