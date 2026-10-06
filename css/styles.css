@@ -335,3 +335,149 @@ h2 {
         text-align: center;
     }
 }
+
+/* ===== PÁGINA DE EVENTOS ===== */
+.hero-eventos {
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                      url('../img/eventos/hero-eventos.svg');
+}
+
+.eventos-intro {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 2.5rem;
+}
+
+.eventos-datos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.dato {
+    background-color: var(--color-blanco);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.dato-numero {
+    display: block;
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: var(--color-principal);
+}
+
+.dato-label {
+    font-size: 0.95rem;
+}
+
+.servicio-card {
+    padding-bottom: 0.5rem;
+}
+
+.servicio-icono {
+    display: block;
+    font-size: 2.6rem;
+    margin-top: 1.5rem;
+}
+
+.servicio-card h3 {
+    margin-top: 0.5rem;
+}
+
+.servicio-card p {
+    margin-bottom: 1.5rem;
+}
+
+.eventos-galeria {
+    background-color: var(--color-gris);
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.galeria-grid figure {
+    position: relative;
+    margin: 0;
+    border-radius: var(--radio);
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    background-color: var(--color-blanco);
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: var(--transicion);
+}
+
+.galeria-grid figure:hover img {
+    transform: scale(1.05);
+}
+
+.galeria-grid figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1.6rem 1rem 0.7rem;
+    font-family: var(--fuente-titulos);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--color-blanco);
+    background: linear-gradient(transparent, rgba(0,0,0,0.75));
+}
+
+.cta-cotiza {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+.cta-cotiza h2 {
+    color: var(--color-blanco);
+}
+
+.cta-cotiza p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.btn-cotiza {
+    display: inline-block;
+    padding: 1.1rem 2.6rem;
+    font-size: 1.2rem;
+    box-shadow: var(--sombra);
+}
+
+@media (min-width: 768px) {
+    .eventos-datos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria-grid img {
+        height: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .galeria-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .galeria-grid img {
+        height: 190px;
+    }
+}
