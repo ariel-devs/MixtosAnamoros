@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta a Mixtos Anamorós: escríbenos por WhatsApp, usa el formulario, consulta nuestros horarios y encuentra el mapa de ubicación en Anamorós, La Unión.">
+    <title>Contacto | Mixtos Anamorós</title>
+    <link rel="icon" type="image/jpeg" href="img/Logo%20Mixto.jpeg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <img src="img/Logo%20Mixto.jpeg" alt="Logo Mixtos Anamorós" width="60" height="60">
+                <span>Mixtos Anamorós</span>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ENCABEZADO DE PÁGINA -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contáctanos</h1>
+            <p>¿Quieres hacer un pedido, cotizar un evento o tienes una duda? Escríbenos y te respondemos lo antes posible.</p>
+            <a href="https://wa.me/50360569876?text=Hola%20Mixtos%20Anamor%C3%B3s%2C%20quisiera%20hacer%20una%20consulta."
+               class="btn btn-whatsapp" target="_blank" rel="noopener">💬 Escríbenos por WhatsApp</a>
+        </div>
+    </section>
+
+    <main class="container contact-layout">
+
+        <!-- FORMULARIO -->
+        <section class="contact-form-box" aria-labelledby="titulo-form">
+            <h2 id="titulo-form">Envíanos un mensaje</h2>
+            <p class="form-note">Al enviar, se abrirá WhatsApp con tu mensaje listo para mandarlo.</p>
+
+            <form id="form-contacto" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name">
+                    <small class="error" id="error-nombre"></small>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required autocomplete="email">
+                        <small class="error" id="error-correo"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="7000-0000" autocomplete="tel">
+                        <small class="error" id="error-telefono"></small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Motivo de contacto</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="Pedido">Hacer un pedido</option>
+                        <option value="Cotización de evento">Cotizar un evento</option>
+                        <option value="Consulta general">Consulta general</option>
+                        <option value="Sugerencia o reclamo">Sugerencia o reclamo</option>
+                    </select>
+                    <small class="error" id="error-asunto"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas (fecha, número de personas, etc.)" required></textarea>
+                    <small class="error" id="error-mensaje"></small>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+            </form>
+        </section>
+
+        <!-- INFORMACIÓN -->
+        <aside class="contact-info">
+
+            <div class="info-card">
+                <h3>📍 Ubicación</h3>
+                <p>Barrio Nuevo, Anamorós, La Unión Norte</p>
+                <a href="https://share.google/uU0UTtlA4N5zg69qw" target="_blank" rel="noopener">Abrir en Google Maps</a>
+            </div>
+
+            <div class="info-card">
+                <h3>📞 Teléfono y correo</h3>
+                <p><a href="tel:+50360569876">6056-9876</a></p>
+                <p><a href="mailto:mixtosanamoros503@gmail.com">mixtosanamoros503@gmail.com</a></p>
+            </div>
+
+            <div class="info-card">
+                <h3>🕒 Horarios de atención</h3>
+                <table class="horarios">
+                    <tbody>
+                        <tr><th scope="row">Lunes a viernes</th><td>10:30 AM - 9:00 PM</td></tr>
+                        <tr><th scope="row">Sábado</th><td>10:30 AM - 9:00 PM</td></tr>
+                        <tr><th scope="row">Domingo</th><td>10:30 AM - 9:00 PM</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-card">
+                <h3>🌐 Síguenos</h3>
+                <div class="redes">
+                    <a href="https://www.tiktok.com/@king_velazques84?is_from_webapp=1&sender_device=pc" class="red red-wa" target="_blank" rel="noopener">TikTok</a>
+                    <a href="https://www.facebook.com/p/Mixtos-Anamoros-100091752638281/" class="red red-fb" target="_blank" rel="noopener">Facebook</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- MAPA -->
+    <section class="mapa container" aria-labelledby="titulo-mapa">
+        <h2 id="titulo-mapa">¿Cómo llegar?</h2>
+        <div class="map-wrap">
+            <iframe
+                title="Mapa de ubicación de Mixtos Anamorós"
+                src="https://www.google.com/maps?q=Anamor%C3%B3s,+La+Uni%C3%B3n,+El+Salvador&output=embed"
+                width="600" height="450" style="border:0;" allowfullscreen loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Mixtos Anamorós</h3>
+                <p>Comida y platillos especiales en Anamorós, La Unión.</p>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <p>📞 6056-9876</p>
+                <p>✉️ mixtosanamoros503@gmail.com</p>
+                <p>🕒 10:30 AM - 9:00 PM</p>
+            </div>
+            <div>
+                <h3>Ubicación</h3>
+                <p>Barrio Nuevo, Anamorós, La Unión Norte</p>
+                <a href="https://share.google/uU0UTtlA4N5zg69qw" target="_blank" rel="noopener">Ver en Google Maps</a>
+            </div>
+            <div>
+                <h3>Síguenos</h3>
+                <a href="https://www.tiktok.com/@king_velazques84?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener">TikTok</a><br>
+                <a href="https://www.facebook.com/p/Mixtos-Anamoros-100091752638281/" target="_blank" rel="noopener">Facebook</a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 Mixtos Anamorós. Proyecto académico UNIVO - Diseño Web Adaptable.</p>
+    </footer>
+
+    <script>
+        // Menú hamburguesa
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Formulario -> WhatsApp
+        const form = document.getElementById('form-contacto');
+        const NUMERO_WA = '50360569876';
+
+        function setError(id, msg) {
+            document.getElementById('error-' + id).textContent = msg;
+            document.getElementById(id).classList.toggle('invalid', Boolean(msg));
+        }
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const nombre = form.nombre.value.trim();
+            const correo = form.correo.value.trim();
+            const telefono = form.telefono.value.trim();
+            const asunto = form.asunto.value;
+            const mensaje = form.mensaje.value.trim();
+            let valido = true;
+
+            setError('nombre', nombre.length < 3 ? 'Escribe tu nombre completo.' : '');
+            setError('correo', !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo) ? 'Escribe un correo válido.' : '');
+            setError('telefono', telefono && !/^[0-9\s-]{8,}$/.test(telefono) ? 'Escribe un teléfono válido (8 dígitos).' : '');
+            setError('asunto', !asunto ? 'Selecciona un motivo.' : '');
+            setError('mensaje', mensaje.length < 10 ? 'El mensaje debe tener al menos 10 caracteres.' : '');
+
+            valido = !form.querySelector('.invalid');
+            if (!valido) return;
+
+            const texto =
+                `Hola, soy ${nombre}.\n` +
+                `Motivo: ${asunto}\n` +
+                `Correo: ${correo}\n` +
+                (telefono ? `Teléfono: ${telefono}\n` : '') +
+                `Mensaje: ${mensaje}`;
+
+            window.open(`https://wa.me/${NUMERO_WA}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
+            form.reset();
+        });
+    </script>
+
+</body>
+</html>

@@ -501,3 +501,110 @@ h2 {
         height: 190px;
     }
 }
+
+
+
+
+
+/* ===== PÁGINA DE CONTACTO ===== */
+
+.page-hero {
+    background: #c0392b;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.page-hero h1 { font-family: 'Poppins', sans-serif; margin-bottom: .5rem; }
+.page-hero p { max-width: 640px; margin: 0 auto 1.5rem; }
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2.5rem 1rem;
+}
+
+/* Formulario */
+.contact-form-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
+}
+.contact-form-box h2 { font-family: 'Poppins', sans-serif; margin-bottom: .25rem; }
+.form-note { color: #666; font-size: .9rem; margin-bottom: 1.25rem; }
+
+.form-group { display: flex; flex-direction: column; margin-bottom: 1rem; }
+.form-row { display: grid; grid-template-columns: 1fr; gap: 0 1rem; }
+
+.form-group label { font-weight: 500; margin-bottom: .35rem; }
+.form-group input,
+.form-group select,
+.form-group textarea {
+    font: inherit;
+    padding: .7rem .9rem;
+    border: 1.5px solid #d5d8dc;
+    border-radius: 8px;
+    background: #fff;
+    width: 100%;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #27ae60;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, .2);
+}
+.form-group .invalid { border-color: #c0392b; }
+.error { color: #c0392b; font-size: .8rem; min-height: 1em; margin-top: .25rem; }
+.btn-block { width: 100%; border: none; cursor: pointer; }
+
+/* Tarjetas de información */
+.contact-info { display: grid; gap: 1rem; align-content: start; }
+.info-card {
+    background: #fff;
+    border-left: 5px solid #27ae60;
+    border-radius: 10px;
+    padding: 1.1rem 1.25rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .07);
+}
+.info-card h3 { font-family: 'Poppins', sans-serif; font-size: 1.05rem; margin-bottom: .5rem; }
+.info-card a { color: #c0392b; font-weight: 500; }
+
+.horarios { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.horarios th { text-align: left; font-weight: 500; padding: .35rem 0; }
+.horarios td { text-align: right; padding: .35rem 0; }
+.horarios tr + tr { border-top: 1px solid #eee; }
+
+.redes { display: flex; flex-wrap: wrap; gap: .6rem; }
+.red {
+    padding: .5rem 1rem;
+    border-radius: 999px;
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+.red-wa { background: #000000; }
+.red-fb { background: #1877f2; }
+
+/* Mapa */
+.mapa { padding: 0 1rem 3rem; }
+.mapa h2 { font-family: 'Poppins', sans-serif; margin-bottom: 1rem; text-align: center; }
+.map-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .12);
+}
+.map-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+/* Tablet y escritorio */
+@media (min-width: 600px) {
+    .form-row { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 900px) {
+    .contact-layout { grid-template-columns: 3fr 2fr; align-items: start; }
+    .map-wrap { aspect-ratio: 21 / 9; }
+}
