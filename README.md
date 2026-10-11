@@ -36,17 +36,17 @@ Sitio web adaptativo (responsive) de 5 páginas para promocionar la comida típi
 
 También está disponible en línea a través de **GitHub Pages**: https://ariel-devs.github.io/MixtosAnamoros/
 
-## Equipo
+## Equipo y reparto de trabajo
 
-| Nombre | Código | Página asignada |
+| Nombre | Código | Rol / Página |
 | --- | --- | --- |
-| Ariel Neftalí Argueta Rodríguez | U20240775 | Inicio (estructura base) |
-| Noé Benjamín Garmendia Lazo | U20241208 | Eventos |
-| Bayron Moises Guevara Escobar | U20231510 | Nosotros |
-| Stanley Josue Pinea Argueta | U20240542 | Contacto |
-| Pedro Javier Flores Peña | U20240800 | Menú (por completar) |
-| Elvin Elisander Rivera Sorto | U20231642 | Por asignar |
-| Verónica Nataly Morales Jimenez | U20220902 | Por asignar |
+| Ariel Neftalí Argueta Rodríguez | U20240775 | Coordinador + GitHub — index.html y styles.css global |
+| Pedro Javier Flores Peña | U20240800 | Menú — menu.html |
+| Noé Benjamín Garmendia Lazo | U20241208 | Eventos — eventos.html |
+| Bayron Moises Guevara Escobar | U20231510 | Nosotros + Media Queries — nosotros.html |
+| Stanley Josue Pinea Argueta | U20240542 | Contacto — contacto.html |
+| Elvin Elisander Rivera Sorto | U20231642 | QA + Optimización |
+| Verónica Nataly Morales Jimenez | U20220902 | UX/UI + Evidencias y presentación |
 
 ## Licencia
 
