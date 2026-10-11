@@ -347,7 +347,7 @@ h2 {
 /* ===== PÁGINA DE EVENTOS ===== */
 .hero-eventos {
     background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-                      url('../img/eventos/hero-eventos.jpg');
+                      url('../img/eventos/salon-con-gente-1.jpeg');
 }
 
 .eventos-intro {
@@ -399,18 +399,6 @@ h2 {
 
 .servicio-card p {
     margin-bottom: 1.5rem;
-}
-
-.tipo-evento {
-    padding: 1.8rem 1.2rem;
-}
-
-.tipo-evento h3 {
-    margin-top: 0;
-}
-
-.tipo-evento p {
-    padding: 0;
 }
 
 .eventos-galeria {
@@ -494,11 +482,11 @@ h2 {
 
 @media (min-width: 1024px) {
     .galeria-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .galeria-grid img {
-        height: 190px;
+        height: 200px;
     }
 }
 
