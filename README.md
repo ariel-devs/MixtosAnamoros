@@ -40,10 +40,13 @@ También está disponible en línea a través de **GitHub Pages**: https://ariel
 
 | Nombre | Código | Página asignada |
 | --- | --- | --- |
-| Noé | U20241208 | Eventos |
-| *Completar* | *U20XXXXX* | *Menú* |
-| *Completar* | *U20XXXXX* | *Contacto* |
-| *Completar* | *U20XXXXX* | *Nosotros* |
+| Ariel Neftalí Argueta Rodríguez | U20240775 | Inicio (estructura base) |
+| Noé Benjamín Garmendia Lazo | U20241208 | Eventos |
+| Bayron Moises Guevara Escobar | U20231510 | Nosotros |
+| Stanley Josue Pinea Argueta | U20240542 | Contacto |
+| Pedro Javier Flores Peña | U20240800 | Menú (por completar) |
+| Elvin Elisander Rivera Sorto | U20231642 | Por asignar |
+| Verónica Nataly Morales Jimenez | U20220902 | Por asignar |
 
 ## Licencia
 
