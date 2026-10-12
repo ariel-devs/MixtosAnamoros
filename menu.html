@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menú de Mixtos Anamorós: pupusas, nachos, chimichangas, dedos de queso, enchiladas y platos de res y pollo en Anamorós, La Unión. Pide por WhatsApp.">
+    <title>Menú | Mixtos Anamorós</title>
+    <link rel="icon" type="image/jpeg" href="img/Logo%20Mixto.jpeg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <img src="img/Logo%20Mixto.jpeg" alt="Logo Mixtos Anamorós" width="60" height="60">
+                <span>Mixtos Anamorós</span>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html" class="active" aria-current="page">Menú</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ENCABEZADO -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Nuestro Menú</h1>
+                <p>Comida casera preparada al momento. Elige tu antojo y pídelo por WhatsApp para que llegue calientito.</p>
+                <a href="https://wa.me/50360569876?text=Hola%20Mixtos%20Anamor%C3%B3s%2C%20quisiera%20hacer%20un%20pedido."
+                   class="btn btn-whatsapp" target="_blank" rel="noopener">💬 Hacer pedido por WhatsApp</a>
+            </div>
+        </section>
+
+        <!-- PROMOCIONES -->
+        <section class="promos container" aria-labelledby="titulo-promos">
+            <h2 id="titulo-promos">Promociones</h2>
+            <div class="promos-grid">
+                <article class="promo-card">
+                    <span class="promo-etiqueta">Combo</span>
+                    <h3>Pupusas + Bebida</h3>
+                    <p>3 pupusas con curtido y una gaseosa de lata.</p>
+                    <span class="promo-precio">$3.50</span>
+                </article>
+                <article class="promo-card">
+                    <span class="promo-etiqueta">Para compartir</span>
+                    <h3>Nachos + Dedos de queso</h3>
+                    <p>La botana perfecta para dos o más personas.</p>
+                    <span class="promo-precio">$8.50</span>
+                </article>
+                <article class="promo-card">
+                    <span class="promo-etiqueta">Pedidos grupales</span>
+                    <h3>10% de descuento</h3>
+                    <p>En pedidos para llevar de 10 platillos o más, con anticipación.</p>
+                    <span class="promo-precio">-10%</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- GRID DE PLATILLOS -->
+        <section class="menu-seccion" aria-labelledby="titulo-platillos">
+            <div class="container">
+                <h2 id="titulo-platillos">Platillos</h2>
+                <p class="eventos-intro">Todos nuestros platillos se preparan al instante. Los precios pueden variar según los ingredientes del día.</p>
+
+                <div class="cards-grid menu-grid">
+
+                    <article class="card menu-card">
+                        <img src="img/menu/pupucha.jpeg" alt="Pupusas doradas con curtido, salsa y una Coca-Cola" loading="lazy" width="1200" height="1600">
+                        <h3>Pupusas</h3>
+                        <p>Pupusas hechas a mano, rellenas a tu gusto y servidas con curtido y salsa.</p>
+                        <span class="precio">$1.00 c/u</span>
+                        <a href="https://wa.me/50360569876?text=Hola%2C%20quiero%20pedir%20pupusas%20en%20Mixtos%20Anamor%C3%B3s"
+                           class="btn btn-whatsapp btn-pedir" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                    </article>
+
+                    <article class="card menu-card">
+                        <img src="img/menu/nachos.jpeg" alt="Nachos con carne molida, queso, pico de gallo y salsas" loading="lazy" width="1200" height="1600">
+                        <h3>Nachos</h3>
+                        <p>Totopos con carne, queso, pico de gallo y nuestras salsas de la casa.</p>
+                        <span class="precio">$5.00</span>
+                        <a href="https://wa.me/50360569876?text=Hola%2C%20quiero%20pedir%20nachos%20en%20Mixtos%20Anamor%C3%B3s"
+                           class="btn btn-whatsapp btn-pedir" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                    </article>
+
+                    <article class="card menu-card">
+                        <img src="img/menu/chimichangas.jpeg" alt="Chimichangas doradas con cilantro y guacamole" loading="lazy" width="1200" height="1600">
+                        <h3>Chimichangas</h3>
+                        <p>Tortillas rellenas, doradas y crujientes, acompañadas de guacamole.</p>
+                        <span class="precio">$4.50</span>
+                        <a href="https://wa.me/50360569876?text=Hola%2C%20quiero%20pedir%20chimichangas%20en%20Mixtos%20Anamor%C3%B3s"
+                           class="btn btn-whatsapp btn-pedir" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                    </article>
+
+                    <article class="card menu-card">
+                        <img src="img/menu/dedos_de_queso.jpeg" alt="Dedos de queso empanizados con papas fritas y salsas" loading="lazy" width="1600" height="1200">
+                        <h3>Dedos de Queso</h3>
+                        <p>Dedos de queso empanizados con papas fritas y salsas de la casa.</p>
+                        <span class="precio">$4.00</span>
+                        <a href="https://wa.me/50360569876?text=Hola%2C%20quiero%20pedir%20dedos%20de%20queso%20en%20Mixtos%20Anamor%C3%B3s"
+                           class="btn btn-whatsapp btn-pedir" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                    </article>
+
+                    <article class="card menu-card">
+                        <img src="img/menu/enchilada.jpeg" alt="Enchiladas salvadoreñas con carne, repollo, queso, aguacate y huevo" loading="lazy" width="1200" height="1600">
+                        <h3>Enchiladas</h3>
+                        <p>Tostada con frijol, carne, repollo, queso, aguacate y huevo cocido, con salsa.</p>
+                        <span class="precio">$2.50</span>
+                        <a href="https://wa.me/50360569876?text=Hola%2C%20quiero%20pedir%20enchiladas%20en%20Mixtos%20Anamor%C3%B3s"
+                           class="btn btn-whatsapp btn-pedir" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                    </article>
+
+                    <article class="card menu-card">
+                        <img src="img/menu/panes.jpeg" alt="Pan especial con verduras, queso y aderezo" loading="lazy" width="1600" height="1200">
+                        <h3>Panes Especiales</h3>
+                        <p>Pan recién hecho con verduras frescas, queso y aderezo.</p>
+                        <span class="precio">$3.00</span>
+                        <a href="https://wa.me/50360569876?text=Hola%2C%20quiero%20pedir%20un%20pan%20especial%20en%20Mixtos%20Anamor%C3%B3s"
+                           class="btn btn-whatsapp btn-pedir" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                    </article>
+
+                    <article class="card menu-card">
+                        <img src="img/menu/res_y_pollo.jpeg" alt="Plato de carne de res asada con arroz, ensalada de remolacha y aderezo" loading="lazy" width="1080" height="810">
+                        <h3>Plato de Res</h3>
+                        <p>Carne de res asada con arroz, ensalada y aderezo de la casa.</p>
+                        <span class="precio">$7.00</span>
+                        <a href="https://wa.me/50360569876?text=Hola%2C%20quiero%20pedir%20un%20plato%20de%20res%20en%20Mixtos%20Anamor%C3%B3s"
+                           class="btn btn-whatsapp btn-pedir" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                    </article>
+
+                    <article class="card menu-card">
+                        <img src="img/menu/res_y_pollo_2.jpeg" alt="Plato de pollo a la plancha con arroz, ensalada fresca y aderezo" loading="lazy" width="1080" height="811">
+                        <h3>Plato de Pollo</h3>
+                        <p>Pechuga de pollo a la plancha con arroz, ensalada fresca y aderezo.</p>
+                        <span class="precio">$6.50</span>
+                        <a href="https://wa.me/50360569876?text=Hola%2C%20quiero%20pedir%20un%20plato%20de%20pollo%20en%20Mixtos%20Anamor%C3%B3s"
+                           class="btn btn-whatsapp btn-pedir" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="cta-eventos">
+            <div class="container">
+                <h2>¿Pedido grande o evento?</h2>
+                <p>Preparamos menús especiales para cumpleaños, reuniones y celebraciones. Cotiza sin compromiso.</p>
+                <a href="eventos.html" class="btn btn-primary">Ver eventos</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Mixtos Anamorós</h3>
+                <p>Comida y platillos especiales en Anamorós, La Unión.</p>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <p>📞 6056-9876</p>
+                <p>✉️ mixtosanamoros503@gmail.com</p>
+                <p>🕒 10:30 AM - 9:00 PM</p>
+            </div>
+            <div>
+                <h3>Ubicación</h3>
+                <p>Barrio Nuevo, Anamorós, La Unión Norte</p>
+                <a href="https://share.google/uU0UTtlA4N5zg69qw" target="_blank" rel="noopener">Ver en Google Maps</a>
+            </div>
+            <div>
+                <h3>Síguenos</h3>
+                <a href="https://www.tiktok.com/@king_velazques84?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener">TikTok</a><br>
+                <a href="https://www.facebook.com/p/Mixtos-Anamoros-100091752638281/" target="_blank" rel="noopener">Facebook</a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2026 Mixtos Anamorós. Proyecto académico UNIVO - Diseño Web Adaptable.</p>
+    </footer>
+
+    <script>
+        // Menú hamburguesa
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            const abierto = navLinks.classList.toggle('active');
+            toggle.setAttribute('aria-expanded', abierto);
+        });
+    </script>
+
+</body>
+</html>
