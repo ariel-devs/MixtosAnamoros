@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Eventos en Mixtos Anamorós: cumpleaños familiares, reuniones y celebraciones especiales en Anamorós, La Unión. Comida típica salvadoreña, catering básico y menús para eventos. Cotiza por WhatsApp.">
     <title>Eventos | Mixtos Anamorós</title>
-    <link rel="icon" type="image/jpeg" href="img/Logo%20Mixto.jpeg">
+    <link rel="icon" type="image/webp" href="img/Logo_Mixto.webp">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script defer src="js/datos.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/eventos.js"></script>
 </head>
 <body>
 
@@ -17,7 +20,7 @@
     <header class="header">
         <nav class="navbar container">
             <a href="index.html" class="logo">
-                <img src="img/Logo%20Mixto.jpeg" alt="Logo Mixtos Anamorós" width="60" height="60">
+                <img src="img/Logo_Mixto.webp" alt="Logo Mixtos Anamorós" width="60" height="60">
                 <span>Mixtos Anamorós</span>
             </a>
             <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
@@ -77,28 +80,7 @@
                 </div>
             </div>
 
-            <div class="cards-grid servicios-grid">
-                <article class="card servicio-card">
-                    <span class="servicio-icono" aria-hidden="true">🎂</span>
-                    <h3>Cumpleaños</h3>
-                    <p>Cumpleaños familiares en un espacio acogedor. Preparamos el menú que más te guste —platos típicos o algo más especial— y te ayudamos para que la celebración salga tranquila y sabrosa.</p>
-                </article>
-                <article class="card servicio-card">
-                    <span class="servicio-icono" aria-hidden="true">👨👩👧👦</span>
-                    <h3>Reuniones familiares</h3>
-                    <p>Reencuentros, almuerzos y juntadas de amigos para grupos pequeños o medianos. Nos encargamos de la comida y del espacio para que ustedes solo se dediquen a compartir.</p>
-                </article>
-                <article class="card servicio-card">
-                    <span class="servicio-icono" aria-hidden="true">🎉</span>
-                    <h3>Eventos especiales</h3>
-                    <p>Día de la Madre, Navidad, fin de año y celebraciones de la comunidad. Preparamos menús por temporada y atendemos pedidos grupales con anticipación, con el sabor de siempre.</p>
-                </article>
-                <article class="card servicio-card">
-                    <span class="servicio-icono" aria-hidden="true">🥡</span>
-                    <h3>Catering / Para llevar</h3>
-                    <p>¿Prefieres celebrar en tu casa? Preparamos tus pedidos para llevar: pupusas, platos típicos y combos por encargo, bien empacados para que lleguen calientitos a tu mesa.</p>
-                </article>
-            </div>
+            <div class="cards-grid servicios-grid" id="servicios-grid"></div>
         </section>
 
         <!-- GALERÍA -->
@@ -106,28 +88,8 @@
             <div class="container">
                 <h2>Galería de Eventos</h2>
                 <p class="eventos-intro">Un vistazo a nuestro espacio y a algunas de las celebraciones que hemos acompañado.</p>
-                <div class="galeria-grid">
-                    <figure>
-                        <img src="img/eventos/salon-con-gente-1.jpeg" alt="Celebración con invitados en el salón de Mixtos Anamorós" width="1600" height="1200" loading="lazy">
-                        <figcaption>Celebración en nuestro salón</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/eventos/salon-con-gente-2.jpeg" alt="Invitados disfrutando de un evento en Mixtos Anamorós" width="1600" height="1200" loading="lazy">
-                        <figcaption>Invitados disfrutando</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/eventos/salon-sin-gente-1.jpeg" alt="Salón de eventos preparado y decorado en Mixtos Anamorós" width="1080" height="809" loading="lazy">
-                        <figcaption>Salón preparado para tu evento</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/eventos/salon-sin-gente-2.jpeg" alt="Espacio del salón listo para celebrar en Mixtos Anamorós" width="1600" height="1200" loading="lazy">
-                        <figcaption>Espacio listo para celebrar</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/eventos/exterior-local.jpeg" alt="Fachada exterior del local de Mixtos Anamorós" width="1080" height="809" loading="lazy">
-                        <figcaption>Fachada del local</figcaption>
-                    </figure>
-                </div>
+                <div class="filtros" id="filtros-galeria" role="group" aria-label="Filtrar fotos por categoría"></div>
+                <div class="galeria-grid" id="galeria-grid" aria-live="polite"></div>
             </div>
         </section>
 
@@ -168,21 +130,12 @@
             <div>
                 <h3>Síguenos</h3>
                 <a href="https://wa.me/50360569876" target="_blank" rel="noopener noreferrer">WhatsApp</a><br>
-                <a href="https://www.facebook.com/p/Mixtos-Anamoros-100091752638281/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.facebook.com/p/Mixtos-Anamoros-100091752638281/" target="_blank" rel="noopener noreferrer">Facebook</a><br>
+                <a href="https://www.tiktok.com/@king_velazques84" target="_blank" rel="noopener noreferrer">TikTok</a>
             </div>
         </div>
         <p class="footer-copy">© 2026 Mixtos Anamorós. Proyecto académico UNIVO - Diseño Web Adaptable.</p>
     </footer>
-
-    <script>
-        // Menú hamburguesa
-        const toggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        toggle.addEventListener('click', () => {
-            const abierto = navLinks.classList.toggle('active');
-            toggle.setAttribute('aria-expanded', abierto);
-        });
-    </script>
 
 </body>
 </html>

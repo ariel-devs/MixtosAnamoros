@@ -12,17 +12,48 @@ Sitio web adaptativo (responsive) de 5 páginas para promocionar la comida típi
 
 | Página | Archivo | Contenido |
 | --- | --- | --- |
-| Inicio | `index.html` | Presentación, platillos destacados y llamada a la acción |
-| Menú | `menu.html` | Platillos y precios (*pendiente*) |
-| Eventos | `eventos.html` | Celebración de eventos, galería y cotización |
+| Inicio | `index.html` | Presentación, platillos destacados (renderizados con JS) y llamada a la acción |
+| Menú | `menu.html` | Promociones, platillos con precios, filtros por categoría, búsqueda y pedido por WhatsApp |
+| Eventos | `eventos.html` | Servicios para eventos, galería con filtros y cotización |
 | Nosotros | `nosotros.html` | Historia, misión, visión y valores |
 | Contacto | `contacto.html` | WhatsApp, formulario, horarios y mapa |
 
 ## Tecnologías
 
-- HTML5
-- CSS3 (diseño responsive, mobile-first)
-- JavaScript vanilla (menú móvil)
+- HTML5 semántico
+- CSS3 (mobile-first con `min-width`, CSS Grid para los layouts y Flexbox para los componentes)
+- JavaScript vanilla: arreglos de objetos, `for...of` y renderizado dinámico con `innerHTML`
+- Imágenes en formato **WebP**, con `width`/`height` definidos y `loading="lazy"`
+
+## Estructura del proyecto
+
+```
+MixtosAnamoros/
+├── index.html
+├── menu.html
+├── eventos.html
+├── nosotros.html
+├── contacto.html
+├── css/
+│   └── styles.css        # estilos globales y de cada página
+├── js/
+│   ├── datos.js          # arreglos de objetos: platillos, promociones, servicios, galería
+│   ├── main.js           # menú hamburguesa, filtros reutilizables, formato de precios
+│   ├── inicio.js         # platillos destacados
+│   ├── menu.js           # promociones, platillos, filtro por categoría y búsqueda
+│   ├── eventos.js        # servicios y galería con filtros
+│   └── contacto.js       # validación del formulario y envío a WhatsApp
+└── img/
+    ├── Logo_Mixto.webp
+    ├── eventos/          # fotos del local, salón y platillos (.webp)
+    └── menu/             # fotos de los platillos del menú (.webp)
+```
+
+## Cómo funciona el JavaScript
+
+Los datos viven en `js/datos.js` como arreglos de objetos (por ejemplo `platillos`, `promociones`, `servicios` y `galeria`). Cada página los recorre con `for...of` y arma las tarjetas con `innerHTML`. Para agregar o cambiar un platillo basta con editar su objeto en `datos.js`; no hace falta tocar el HTML.
+
+Interactividad: filtros por categoría (menú y galería), buscador de platillos, menú hamburguesa, botones de pedido por WhatsApp con el mensaje ya escrito y formulario de contacto validado.
 
 ## Cómo visualizarlo
 
@@ -50,4 +81,4 @@ También está disponible en línea a través de **GitHub Pages**: https://ariel
 
 ## Licencia
 
-Proyecto académico. Ver archivo `LICENSE`.
+Proyecto académico publicado bajo la licencia MIT. Ver archivo `LICENSE`.

@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mixtos Anamorós - Comida casera, menú del día y celebraciones familiares en Anamorós, La Unión. Pedidos por WhatsApp y cotización de eventos.">
     <title>Mixtos Anamorós | Comida y Eventos</title>
-    <link rel="icon" type="image/jpeg" href="img/Logo%20Mixto.jpeg">
+    <link rel="icon" type="image/webp" href="img/Logo_Mixto.webp">
+    <link rel="preload" as="image" href="img/eventos/exterior-local.webp">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script defer src="js/datos.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/inicio.js"></script>
 </head>
 <body>
 
@@ -17,10 +21,10 @@
     <header class="header">
         <nav class="navbar container">
             <a href="index.html" class="logo">
-                <img src="img/Logo%20Mixto.jpeg" alt="Logo Mixtos Anamorós" width="60" height="60">
+                <img src="img/Logo_Mixto.webp" alt="Logo Mixtos Anamorós" width="60" height="60">
                 <span>Mixtos Anamorós</span>
             </a>
-            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Inicio</a></li>
                 <li><a href="menu.html">Menú</a></li>
@@ -53,26 +57,8 @@
     <!-- PLATILLOS DESTACADOS -->
     <section class="destacados container">
         <h2>Platillos Destacados</h2>
-        <div class="cards-grid">
-            <article class="card">
-                <img src="img/eventos/platillo-1.jpeg" alt="Platillo servido en Mixtos Anamorós" loading="lazy" width="1200" height="1600">
-                <h3>Platillo Típico</h3>
-                <p>Delicioso platillo con ingredientes frescos del día.</p>
-                <span class="precio">$5.00</span>
-            </article>
-            <article class="card">
-                <img src="img/eventos/platillo-2.jpeg" alt="Especial de la casa en Mixtos Anamorós" loading="lazy" width="1600" height="1200">
-                <h3>Especial de la Casa</h3>
-                <p>Nuestra receta estrella preparada al instante.</p>
-                <span class="precio">$6.50</span>
-            </article>
-            <article class="card">
-                <img src="img/eventos/platillo-3.jpeg" alt="Combo familiar de Mixtos Anamorós" loading="lazy" width="1080" height="809">
-                <h3>Combo Familiar</h3>
-                <p>Ideal para compartir en familia o con amigos.</p>
-                <span class="precio">$12.00</span>
-            </article>
-        </div>
+        <div class="cards-grid" id="destacados-grid" aria-live="polite"></div>
+        <noscript><p class="eventos-intro">Activa JavaScript para ver los platillos destacados o visita nuestro <a href="menu.html">menú completo</a>.</p></noscript>
     </section>
 
     <!-- CTA EVENTOS -->
@@ -105,21 +91,13 @@
             </div>
             <div>
                 <h3>Síguenos</h3>
-                <a href="https://wa.me/50360569876" target="_blank" rel="noopener">WhatsApp</a><br>
-                <a href="#" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://wa.me/50360569876" target="_blank" rel="noopener noreferrer">WhatsApp</a><br>
+                <a href="https://www.facebook.com/p/Mixtos-Anamoros-100091752638281/" target="_blank" rel="noopener noreferrer">Facebook</a><br>
+                <a href="https://www.tiktok.com/@king_velazques84" target="_blank" rel="noopener noreferrer">TikTok</a>
             </div>
         </div>
         <p class="footer-copy">© 2026 Mixtos Anamorós. Proyecto académico UNIVO - Diseño Web Adaptable.</p>
     </footer>
-
-    <script>
-        // Menú hamburguesa
-        const toggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        toggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
 
 </body>
 </html>
